@@ -607,7 +607,8 @@ can_be_sta_and_ap() {
         echo "      it can cause kernel panic. For this reason we disallow virtual" >&2
         echo "      interfaces for your adapter." >&2
         echo "      For more info: https://github.com/oblique/create_ap/issues/203" >&2
-        return 1
+
+        echo "Continuing anyways..."
     fi
     get_adapter_info "$1" | grep -E '{.* managed.* AP.*}' > /dev/null 2>&1 && return 0
     get_adapter_info "$1" | grep -E '{.* AP.* managed.*}' > /dev/null 2>&1 && return 0
