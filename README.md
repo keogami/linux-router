@@ -1,3 +1,6 @@
+# Testing
+I am removing the `brcmfmac` check when testing whether the nic can function as both station and ap, to see if the newer versions of the driver still cause the issues reported earlier.
+
 # Linux-router
 
 Set Linux as router in one command. Able to provide Internet, or create WiFi hotspot. Support transparent proxy (redsocks). Also useful for routing VM/containers.
